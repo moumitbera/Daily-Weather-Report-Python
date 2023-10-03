@@ -1,5 +1,5 @@
 # Daily weather report
-author: @moumit<br>
+author: @moumitbera<br>
 date: 03.10.2023
 
 This is a python program that uses Open Weather API to get weather data for a particular location (co-ordinates) and then sends a mail to the user email about the basic description of the weather for that particular day. 
