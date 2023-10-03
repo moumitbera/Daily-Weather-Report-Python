@@ -12,6 +12,7 @@ OPENWM_API_KEY = os.environ.get("OPENWM_API_KEY").strip('"')
 USER_ID = "moumitcodecheck@gmail.com"
 PASSWORD = os.environ.get("GMAIL_PASSWORD").strip('"')
 MESSAGE = "Subject:Morning report\n\nGood morning Moumit,\n\n[MESSAGE]\n\nHave a wonderful day ahead!"
+TO_MAIL = "contactmoumitbera@gmail.com"
 
 # getting the weather status
 PARAMETERS = {
@@ -57,7 +58,7 @@ def send_mail():
         connection.login(user=USER_ID, password=PASSWORD)
         connection.sendmail(
             from_addr=USER_ID,
-            to_addrs="contactmoumitbera@gmail.com",
+            to_addrs=TO_MAIL,
             msg=MESSAGE.replace("[MESSAGE]", weather_msg),
         )
         print("Sent")
